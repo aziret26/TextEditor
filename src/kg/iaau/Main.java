@@ -13,9 +13,10 @@ public class Main {
     * exit
     * */
     public static void main(String[] args) {
+        ManagerClass mc = new ManagerClass();
         Main m = new Main();
-        m.createFile("File.txt",1500000);
-
+        mc.run();
+        //m.createFile("file.txt",1500000);
     }
 
     public void createFile(String name,int n){
