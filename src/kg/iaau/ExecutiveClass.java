@@ -52,6 +52,7 @@ public class ExecutiveClass {
             for (String s : lines){
                 bw.write(s+"\n");
             }
+            bw.flush();
             fw.close();
         }catch (Exception ex){
             System.out.println("Couldn't save file.\nPlease try again.");
