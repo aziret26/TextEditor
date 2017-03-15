@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d803991f-0649-4fc7-8995-f851e8491f0c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newfile.txt" afterPath="$PROJECT_DIR$/newfile.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kg/iaau/ExecutiveClass.java" afterPath="$PROJECT_DIR$/src/kg/iaau/ExecutiveClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kg/iaau/Main.java" afterPath="$PROJECT_DIR$/src/kg/iaau/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kg/iaau/ManagerClass.java" afterPath="$PROJECT_DIR$/src/kg/iaau/ManagerClass.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,18 +22,19 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kg/iaau/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+            <state relative-caret-position="170">
+              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="10" />
+              <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManagerClass.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ManagerClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kg/iaau/ManagerClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="33" />
+            <state relative-caret-position="147">
+              <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExecutiveClass.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ExecutiveClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kg/iaau/ExecutiveClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="98" column="5" lean-forward="false" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+            <state relative-caret-position="288">
+              <caret line="145" column="35" lean-forward="true" selection-start-line="145" selection-start-column="35" selection-end-line="145" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#loadFile#0;class#ExecutiveClass#0" expanded="false" />
@@ -95,8 +93,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/kg/iaau/Main.java" />
-        <option value="$PROJECT_DIR$/src/kg/iaau/ManagerClass.java" />
         <option value="$PROJECT_DIR$/src/kg/iaau/ExecutiveClass.java" />
+        <option value="$PROJECT_DIR$/src/kg/iaau/ManagerClass.java" />
       </list>
     </option>
   </component>
@@ -570,12 +568,12 @@
       <workItem from="1489559758919" duration="446000" />
       <workItem from="1489575600430" duration="103000" />
       <workItem from="1489580985763" duration="1589000" />
-      <workItem from="1489598546720" duration="820000" />
+      <workItem from="1489598546720" duration="1258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19511000" />
+    <option name="totallyTimeSpent" value="19949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -789,26 +787,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kg/iaau/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+        <state relative-caret-position="170">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="10" />
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="10" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kg/iaau/ManagerClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kg/iaau/ExecutiveClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="98" column="5" lean-forward="false" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        <state relative-caret-position="288">
+          <caret line="145" column="35" lean-forward="true" selection-start-line="145" selection-start-column="35" selection-end-line="145" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#loadFile#0;class#ExecutiveClass#0" expanded="false" />
@@ -819,6 +808,16 @@
             <element signature="method#pageDown#0;class#ExecutiveClass#0" expanded="false" />
             <element signature="method#insertAfter#0;class#ExecutiveClass#0" expanded="false" />
             <element signature="method#printLines#0;class#ExecutiveClass#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kg/iaau/ManagerClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

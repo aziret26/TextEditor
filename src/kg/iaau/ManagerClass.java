@@ -8,36 +8,7 @@ import java.util.Scanner;
  */
 public class ManagerClass {
     private ExecutiveClass ec = new ExecutiveClass();
-    private ArrayList<String> fileMC;   //file manipulation commands
-    private ArrayList<String> lineMC;   //line manipulation commands
-    private ArrayList<String> listAC;   //line altering commands
-    private ArrayList<String> otherC;   //other commands
 
-    ManagerClass(){
-        fileMC = new ArrayList<>();
-        lineMC = new ArrayList<>();
-        listAC = new ArrayList<>();
-        otherC = new ArrayList<>();
-
-        fileMC.add("newfile");
-        fileMC.add("loadfile");
-        fileMC.add("savefile");
-
-        lineMC.add("move-up");
-        lineMC.add("move-down");
-        lineMC.add("page-up");
-        lineMC.add("page-down");
-        lineMC.add("head");
-        lineMC.add("tail");
-
-        listAC.add("insert-before");
-        listAC.add("insert-after");
-        listAC.add("delete");
-        listAC.add("replace");
-
-        otherC.add("show");
-        otherC.add("exit");
-    }
     void run(){
         while (true){
             Scanner in = new Scanner(System.in);

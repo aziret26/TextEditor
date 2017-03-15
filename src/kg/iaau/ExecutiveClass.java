@@ -138,4 +138,12 @@ public class ExecutiveClass {
     boolean isFileLoaded(){
         return lines != null;
     }
+
+    private void showHelp(){
+        String help = "";
+        help += "newfile loadfile savefile\n";
+        help += "move-up move-down page-up page-down head tail\n";
+        help += "show help exit\n";
+        System.out.println(help);
+    }
 }
