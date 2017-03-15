@@ -16,19 +16,19 @@ public class ExecutiveClass {
     * exit
     * */
     String fileName;
-    File currentFile;
-    ArrayList<String> lines;
-    int index;
+    private File currentFile;
+    private ArrayList<String> lines;
+    private int index;
 
-    public ExecutiveClass() {
+    ExecutiveClass() {
         newFile();
     }
 
-    public void newFile(){
+    void newFile(){
         lines = new ArrayList<>();
         index = 0;
     }
-    public void loadFile(String name){
+    void loadFile(String name){
         try {
             currentFile = new File(name);
             FileReader fr = new FileReader(currentFile);
@@ -44,7 +44,7 @@ public class ExecutiveClass {
             System.out.println("Couldn't load file.\nPlease try again.");
         }
     }
-    public void saveFile(String name){
+    void saveFile(String name){
         try {
             File newFile = new File(name);
             FileWriter fw = new FileWriter(newFile);
@@ -58,75 +58,84 @@ public class ExecutiveClass {
             System.out.println("Couldn't save file.\nPlease try again.");
         }
     }
-
-    public void moveUp(){
+    void moveUp(){
         if(index > 0){
             index--;
         }
     }
-    public void moveDown(){
+    void moveDown(){
         if(index < lines.size()-1){
             index++;
         }
     }
-    public void pageUp(){
+    void pageUp(){
         if(index > 20){
             index -= 20;
         }else {
             index = 0;
         }
     }
-    public void pageDown(){
+    void pageDown(){
         if(index < lines.size()-21){
             index += 20;
         }else{
             index = lines.size()-1;
         }
     }
-    public void head(){
+    void head(){
         index = 0;
     }
-    public void tail(){
+    void tail(){
         index = lines.size()-1;
     }
-
-    public void insertBefore(String text){
+    void insertBefore(String text){
         lines.add(index,text);
     }
-    public void insertAfter(String text){
-        lines.add(++index,text);
+    void insertAfter(String text){
+        if(lines.size() == 0)
+            insertBefore(text);
+        else
+            lines.add(++index,text);
     }
-    public void replace(String text){
+    void replace(String text){
         lines.set(index,text);
     }
-    public void delete(){
+
+    void delete(){
         lines.remove(index);
     }
-    public void show(){
+
+    void show(){
         System.out.println(printLines());
     }
 
     private String printLines(){
         String text = "";
-        if(index < 5){
-            for(int i = 0;i < index+6;i++){
-                text += (i+1)+"\t\t\t"+lines.get(i)+"\n";
-            }
-        }else
-        if(index >= lines.size() - 6){
-            for(int i = index-5; i < lines.size();i++){
-                text += (i+1)+"\t\t\t"+lines.get(i)+"\n";
-            }
+        if(lines.size() == 0){
+            text += "file is empty.";
         }else {
-            for(int i = index-6; i < index+5;i++){
-                text += (i+1)+"\t\t\t"+lines.get(i)+"\n";
+            System.out.println("size: "+lines.size());
+            if (index < 5) {
+                for (int i = 0; i < index + 6; i++) {
+                    if(i >= lines.size())
+                        break;
+                    text += (i + 1) + "\t\t\t" + lines.get(i) + "\n";
+                }
+            } else if (index >= lines.size() - 6) {
+                for (int i = index - 5; i < lines.size(); i++) {
+                    text += (i + 1) + "\t\t\t" + lines.get(i) + "\n";
+                }
+            } else {
+                for (int i = index - 6; i < index + 5; i++) {
+                    text += (i + 1) + "\t\t\t" + lines.get(i) + "\n";
+                }
             }
+            text += "\nCurrent line => " + (index + 1);
         }
-        text += "\nCurrent line => "+(index+1);
         return text;
     }
 
-    public boolean isFileLoaded(){
+    boolean isFileLoaded(){
         return lines != null;
     }
 }

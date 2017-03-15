@@ -25,12 +25,10 @@ public class Main {
             FileWriter fw = new FileWriter(file);
             BufferedWriter bw = new BufferedWriter(fw,225681);
             for (int i = 1;i <= n;i++){
-                //bw.append("{---\t\t\t\t "+i+"\t\t\t\t---}\n");
                 String s = "{---\t\t\t\t "+i+" \t\t\t\t---}\n";
-                //StringBuffer stringBuffer = new StringBuffer(s);
                 bw.append(s);
-                //bw.write(s);
             }
+            bw.flush();
             System.out.println("finished");
         }catch (Exception ex){
             ex.printStackTrace();

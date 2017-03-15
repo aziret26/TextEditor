@@ -7,11 +7,11 @@ import java.util.Scanner;
  * Created by azire on 3/14/2017.
  */
 public class ManagerClass {
-    ExecutiveClass ec = new ExecutiveClass();
-    ArrayList<String> fileMC;   //file manipulation commands
-    ArrayList<String> lineMC;   //line manipulation commands
-    ArrayList<String> listAC;   //line altering commands
-    ArrayList<String> otherC;   //other commands
+    private ExecutiveClass ec = new ExecutiveClass();
+    private ArrayList<String> fileMC;   //file manipulation commands
+    private ArrayList<String> lineMC;   //line manipulation commands
+    private ArrayList<String> listAC;   //line altering commands
+    private ArrayList<String> otherC;   //other commands
 
     ManagerClass(){
         fileMC = new ArrayList<>();
@@ -38,7 +38,7 @@ public class ManagerClass {
         otherC.add("show");
         otherC.add("exit");
     }
-    public void run(){
+    void run(){
         while (true){
             Scanner in = new Scanner(System.in);
             String command = in.next();
@@ -58,6 +58,7 @@ public class ManagerClass {
                 case "delete":
                 case "head":
                 case "tail":
+                case "help":
                     singleCommand(command);
                     break;
                 case "loadfile":
